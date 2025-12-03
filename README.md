@@ -188,7 +188,8 @@ swagger-> http://localhost:3000/api/docs
 - Admins manage books/authors/users; normal users only borrow books.
 - Prisma relations sync automatically via migrations.
 
-### [🎥 Demo Video (Required)]([https://your-video-link.com](https://drive.google.com/file/d/1xbxCIWp6ORJmXF2t4WhfNnkU0y-dhIVS/view?usp=sharing))
+### [🎥 Demo Video (Required)](https://drive.google.com/file/d/1xbxCIWp6ORJmXF2t4WhfNnkU0y-dhIVS/view?usp=sharing)
+
 - Record a short walkthrough of:
 - Logging in
 - Viewing books
