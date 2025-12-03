@@ -1,0 +1,62 @@
+# ------------------------------
+# GLOBAL IGNORE
+# ------------------------------
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------
+# BACKEND (NestJS)
+# ------------------------------
+backend/app/node_modules/
+backend/app/dist/
+backend/app/.env
+backend/app/.env.*
+backend/app/prisma/dev.db
+backend/app/prisma/dev.db-journal
+
+# prisma generated client
+backend/app/prisma/client/
+
+# macOS junk
+backend/app/.DS_Store
+
+# ------------------------------
+# FRONTEND (React Vite)
+# ------------------------------
+frontend/oni-frontend/node_modules/
+frontend/oni-frontend/dist/
+frontend/oni-frontend/.env
+frontend/oni-frontend/.env.*
+frontend/oni-frontend/.DS_Store
+
+# Vite cache
+frontend/oni-frontend/.vite/
+
+# ------------------------------
+# DOCKER
+# ------------------------------
+docker-data/
+volumes/
+pgdata/
+*.tar
+*.pid
+
+# ------------------------------
+# EDITORS / SYSTEM FILES
+# ------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+
+!.env.example
