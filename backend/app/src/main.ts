@@ -14,7 +14,7 @@ async function bootstrap() {
     .setTitle('Library API')
     .setDescription('REST API documentation for the Library System')
     .setVersion('1.0')
-    .addBearerAuth() // JWT support
+    .addBearerAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
@@ -25,7 +25,7 @@ async function bootstrap() {
 
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
 
-  app.setGlobalPrefix('api'); // IMPORTANT
+  app.setGlobalPrefix('api');
 
   await app.listen(process.env.PORT ?? 3333);
 }

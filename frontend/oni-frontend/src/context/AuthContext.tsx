@@ -34,12 +34,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setUser(res.data);
     } catch (err) {
       console.log("Failed to load user", err);
-      logout();
+      //logout();
     }
   };
 
   const login = async (tk: string) => {
     localStorage.setItem("token", tk);
+    console.log(tk);
+    //console.log("TOKEN TYPE:", typeof tk);
+    
     setToken(tk);
     await loadUser(tk);
   };
@@ -52,7 +55,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (token) loadUser(token);
-  }, []);
+  }, [token]);
 
   return (
     <AuthContext.Provider value={{ token, user, isAdmin, login, logout }}>

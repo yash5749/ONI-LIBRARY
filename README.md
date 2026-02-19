@@ -201,3 +201,10 @@ swagger-> http://localhost:3000/api/docs
 
 # 📄 License
 MIT
+
+
+```sheel
+run frontend : npm run dev
+run backend : npm run start
+run postgres : brew services start postgresql@16 // in terminal for stopping brew services stop postgresql@16
+```
